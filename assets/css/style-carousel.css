@@ -1,0 +1,172 @@
+.pulse {
+    margin-left: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #0f0;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: pulse-animation-6dda3bad 1s infinite;
+    box-shadow: 0 0 5px #0f0, 0 0 20px #0f0;
+}
+
+.online-indicator {
+    margin-top: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pulse-gold {
+    margin-left: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: gold;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: pulse-animation-6dda3bad 1s infinite;
+    box-shadow: 0 0 5px gold, 0 0 20px gold;
+}
+
+.gains-slider-container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.gains-section {
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(90deg, #2bff5ba1, #ffac4b00);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.title-gains h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.icon-trofeu img {
+    width: 90px;
+}
+
+.gains-con {
+    width: calc(100% - 300px);
+    overflow: hidden;
+}
+
+.gains-slider {
+    overflow: hidden;
+    padding-left: 50px;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+.gains-slider::before {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.gains-slider::after {
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos-slide {
+    display: flex;
+    animation: slide-482ed0c0 60s infinite linear;
+}
+
+.slide-gains {
+    background-color: #1e2024;
+    margin-right: 15px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.logos-slide img {
+    height: 100px;
+    border-radius: 6px;
+    background-size: contain;
+    width: 75px;
+}
+
+.slide-gains .player {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.slide-gains .game {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 10px;
+    margin: 0;
+}
+
+.slide-gains .valor {
+    font-size: 15px;
+    color: #0f0;
+}
+
+@keyframes slide-482ed0c0 {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(-100%)
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gains-section {
+        width: 170px;
+        height: 85px
+    }
+
+    .icon-trofeu img {
+        width: 60px
+    }
+
+    .title-gains h1 {
+        font-size: 14px
+    }
+
+    .gains-slider {
+        padding-left: 170px
+    }
+
+    .slide-gains {
+        height: 85px
+    }
+
+    .gains-con {
+        width: calc(100% - 170px);
+        overflow: hidden
+    }
+}
